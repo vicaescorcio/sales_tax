@@ -56,6 +56,8 @@ To run a specific test file:
 bundle exec rspec spec/test_name_spec.rb
 ```
 
-## License
+## Run the app
 
-This project is licensed under the [MIT License](LICENSE).
+```bash
+ ./tax_sale.rb purchases.txt
+```
