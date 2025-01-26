@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require_relative "./purchase_file_manager"
+require_relative "purchase_file_manager"
 class TaxSale
   attr_accessor :purchase_file_path, :taxed_purchase_file_path
 

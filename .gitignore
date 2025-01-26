@@ -20,3 +20,5 @@
 .rubocop-https?--*
 
 .vscode/
+
+taxed_sale_output.txt

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "./taxer"
+require_relative "taxer"
 
 class Purchase
   attr_reader :products, :created_at, :updted_at

@@ -1,5 +1,5 @@
-require_relative "./product"
-require_relative "./purchase"
+require_relative "product"
+require_relative "purchase"
 
 module PurchaseFileManager
   def self.to_purchase(input_file)
