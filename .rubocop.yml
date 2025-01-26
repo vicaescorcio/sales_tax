@@ -1,0 +1,78 @@
+# .rubocop.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  TargetRubyVersion: 3.0 # Update based on your Ruby version
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+
+# Enforce consistent line length
+Layout/LineLength:
+  Max: 100 # Set maximum line length for readability
+
+# Indentation and spacing rules
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/EmptyLines:
+  Enabled: true
+
+# Naming conventions
+Naming/VariableName:
+  EnforcedStyle: snake_case
+
+Naming/MethodName:
+  EnforcedStyle: snake_case
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+# Style preferences
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: true # Enforce magic comment for frozen string literals
+
+Style/HashSyntax:
+  EnforcedStyle: ruby19 # Use modern hash syntax (`key: value`)
+
+Style/NumericLiterals:
+  MinDigits: 5 # Group large numbers with underscores (e.g., `1_000_000`)
+
+Style/Documentation:
+  Enabled: true # Enforce comments for public methods
+
+# Code complexity
+Metrics/BlockLength:
+  Max: 25 # Limit block length
+
+Metrics/MethodLength:
+  Max: 15 # Limit method length
+
+Metrics/ClassLength:
+  Max: 100 # Limit class length
+
+Metrics/AbcSize:
+  Max: 15 # Limit assignment, branch, and condition complexity
+
+# Avoid large parameter lists
+Metrics/ParameterLists:
+  Max: 5
+
+# Avoid unused variables
+Lint/UselessAssignment:
+  Enabled: true
+
+Lint/UnusedBlockArgument:
+  Enabled: true
