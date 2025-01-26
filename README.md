@@ -58,8 +58,11 @@ bundle exec rspec spec/test_name_spec.rb
 
 ## Run the app
 
+If you are in the project directory
+
+
 ```bash
- ./tax_sale.rb purchases.txt
+ ./lib/tax_sale.rb purchases.txt
 ```
 
 - The output will be write in `taxed_sale_output.txt` file
