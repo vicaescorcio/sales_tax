@@ -61,3 +61,5 @@ bundle exec rspec spec/test_name_spec.rb
 ```bash
  ./tax_sale.rb purchases.txt
 ```
+
+- The output will be write in `taxed_sale_output.txt` file
